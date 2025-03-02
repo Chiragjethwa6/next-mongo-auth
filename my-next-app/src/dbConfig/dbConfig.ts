@@ -10,7 +10,7 @@ export async function connect(){
         })
 
         connecion.on('error', (err) =>{
-            console.log("database cconnection error");
+            console.log("database cconnection error", err);
             process.exit();
         })
     }catch(error){
