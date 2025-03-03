@@ -26,7 +26,7 @@ export default function SignUpPage(){
                 setUser({email : "", username : "", password : ""});
             }
         }catch(error: any){
-            console.error("signup failed", error.message);
+            console.log("signup failed", error.message);
             toast.error("Signup failed", error.message);
         }finally{
             setLoading(false);
